@@ -12,6 +12,7 @@ body {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px 0 15px;
+    display: flex;
 }
 
 .header-nav {
@@ -31,6 +32,7 @@ body {
         color: #4d5ae5;
         text-decoration: none;
         margin-right: 76px;
+        
 }
 
 .logo-part {
@@ -47,6 +49,7 @@ body {
 .navigation {
     display: flex;
     gap: 40px;
+    
 }
 
 .navigation li a {
@@ -71,6 +74,12 @@ body {
 
 .contact-title {
     font-style: normal;
+    
+}
+
+.contact-list {
+    display: flex;
+    gap: 40px;
 }
 
 .contact-title li a {
@@ -92,17 +101,21 @@ body {
 
 /* Main Text and button */
 
-.main-page-text-title {
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #FFFFFF;
+.main-page-section-title {
+background-color: #2E2F42;
+padding: 188px 0;
 }
 
-.main-page-section-title {
-background-color: #2E2F42
+.main-page-text-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 496px;
+    margin: 0 auto;
+    
 }
 
 .main-page-button {
@@ -112,6 +125,14 @@ background-color: #2E2F42
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 48px;
 }
 
 .main-page-button:hover {
@@ -124,13 +145,36 @@ background-color: #2E2F42
 
 /* Achievement */
 
+.main-page-section-title {
+    padding: 120px 0;
+}
+
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+}
+
+.main-page-list-achievement {
+    display: flex;
+    gap: 24px;
+}
+
+.main-page-element-achievement {
+    width: calc((100%-72px)/4);
+}
+
 .main-page-title-achievement {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        text-align: left;
-        color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 .main-page-description {
@@ -145,6 +189,7 @@ background-color: #2E2F42
 
 .main-page-section-team {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .main-page-title-team {
@@ -155,10 +200,22 @@ background-color: #2E2F42
         color: #2E2F42;
         text-align: center;
         text-transform: capitalize;
+        margin-bottom: 72px;
+}
+
+.main-page-titlelist-team {
+    display: flex;
+    gap: 24px;
 }
 
 .main-page-list-team {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-name-prof {
+    padding: 32px 0;
 }
 
 .main-page-title-team-name {
@@ -167,6 +224,8 @@ background-color: #2E2F42
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        text-align: center;
+        margin-bottom: 8px;
 }
 
 .main-page-title-team-desc {
@@ -174,9 +233,15 @@ background-color: #2E2F42
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        text-align: center;
 }
 
 /* Portfolio */
+
+.main-page-section-portfolio{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .main-page-title-portfolio {
         font-size: 36px;
@@ -186,6 +251,24 @@ background-color: #2E2F42
         color: #2E2F42;
         text-align: center;
         text-transform: capitalize;
+        margin-bottom: 72px;
+}
+
+.main-page-list-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.list-portfolio{
+    width: calc((100%-48px)/3);
+}
+
+.portfolio-title{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .main-page-title-porfolio-name {
@@ -194,6 +277,7 @@ background-color: #2E2F42
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 .main-page-title-porfolio-desc {
@@ -208,6 +292,7 @@ background-color: #2E2F42
 
 .footer-section {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 
 .logo-footer {
@@ -219,6 +304,8 @@ background-color: #2E2F42
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-part-footer {
@@ -239,4 +326,5 @@ background-color: #2E2F42
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
