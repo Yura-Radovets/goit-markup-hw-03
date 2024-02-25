@@ -157,6 +157,10 @@ img {
     margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;     
 }
 
 .main-page-list-achievement {
@@ -165,7 +169,7 @@ img {
 }
 
 .main-page-number-achievement {
-    width: calc((100% - 72px) / 4);
+    width: calc((100%-72px)/4);
 }
 
 .main-page-title-achievement {
@@ -211,7 +215,7 @@ img {
 
 .main-page-list-team {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
+    width: calc((100%-72px)/4);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -263,7 +267,7 @@ img {
 }
 
 .main-page-list-portfolio{
-    width: calc((100% - 48px) / 3);
+    width: calc((100%-48px)/3);
 }
 
 .main-page-title-porfolio-name-desc{
@@ -305,8 +309,8 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
-    display: inline-block;
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .logo-part-footer {
