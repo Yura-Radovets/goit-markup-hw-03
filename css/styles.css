@@ -4,23 +4,39 @@ body {
     background-color: #FFFFFF;
 }
 
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 img {
     display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 /* Logo and navigation */
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    width: 1440px;
-    height: 72px;
 }
 
 .container{
-    display: flex;
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-navigation {
@@ -36,7 +52,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    text-decoration: none;
+    font-style: normal;
     margin-right: 76px;
 }
 
@@ -56,27 +72,30 @@ img {
     gap: 40px;
 }
 
-.navigation li a {
+.navigation-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    text-decoration: none;
+    font-style: normal;
+    display: block;
+    padding: 24px 0;
 }
 
 .navigation-title:hover, .navigation-title:focus {
     color: #404bbf;
 }
 
-.navigation-title{
-    padding: 24px 0;
-}
-
 /* Contact */
 
 .contact-title {
     font-style: normal;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-left: 332px;
+    
 }
 
 .contact-title-list {
@@ -84,13 +103,13 @@ img {
     gap: 40px;
 }
 
-.contact-title li a {
+.contact-info {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    text-decoration: none;
+    font-style: normal;
 }
 
 .contact-info:hover {
@@ -101,11 +120,12 @@ img {
     color: #404bbf;
 }
 
-.contact-info{
-    padding: 24px 0;
-}
-
 /* Main Text and button */
+
+.main-page-section-title{ 
+    background-color: #2E2F42;
+    padding: 188px 0;
+}
 
 .main-page-text-title {
     font-size: 56px;
@@ -115,25 +135,24 @@ img {
     text-align: center;
     color: #FFFFFF;
     max-width: 496px;
-}
-
-.main-page-section-title {
-    background-color: #2E2F42;
-    padding: 188px 0;    
+    margin: 0 auto;
 }
 
 .main-page-button {
     background-color: #4D5AE5;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        display: block;
+        margin: 48px auto 0 auto;
+        min-width: 169px;
+        height: 56px;
+        border: none;
+        border-radius: 4px;
+
 }
 
 .main-page-button:hover {
@@ -168,8 +187,8 @@ img {
     gap: 24px;
 }
 
-.main-page-list-achievement .main-page-number-achievement {
-    width: calc((100% - 72px) / 4);
+.main-page-number-achievement {
+    width: calc((100% - 72px) / 2);
 }
 
 .main-page-title-achievement {
@@ -213,8 +232,10 @@ img {
     gap: 24px;
 }
 
-.main-page-ul-list-team .main-page-list-team{
-    width: calc((100%-72px)/4);
+.main-page-list-team{
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4 px;/
+
 }
 .main-page-list-team {
     background-color: #FFFFFF;
@@ -268,7 +289,7 @@ img {
     row-gap: 48px;
 }
 
-.main-page-ul-list-portfolio .main-page-list-portfolio{
+.main-page-list-portfolio{
     width: calc((100%-48px)/3);
 }
 
