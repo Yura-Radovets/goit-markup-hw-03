@@ -290,7 +290,7 @@ ul {
 }
 
 .main-page-list-portfolio{
-    width: calc((100%-48px)/3);
+    width: calc((100% - 48px) / 3);
 }
 
 .main-page-title-porfolio-name-desc{
