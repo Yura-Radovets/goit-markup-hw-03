@@ -233,7 +233,7 @@ ul {
 
 .main-page-list-team {
   width: calc((100% - 72px) / 4);
-  border-radius: 0 0 4px 4 px;
+  border-radius: 0 0 4px 4px;
 }
 
 .main-page-title-team-desc {
