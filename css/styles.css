@@ -229,6 +229,7 @@ ul {
 .main-page-ul-list-team {
   display: flex;
   gap: 24px;
+  background-color: #fff;
 }
 
 .main-page-list-team {
