@@ -189,7 +189,7 @@ ul {
 }
 
 .main-page-number-achievement {
-  width: calc((100% - 72px) / 2);
+  width: calc((100% - 72px) / 4);
 }
 
 .main-page-title-achievement {
@@ -229,12 +229,12 @@ ul {
 .main-page-ul-list-team {
   display: flex;
   gap: 24px;
-  background-color: #fff;
 }
 
 .main-page-list-team {
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
+  background-color: #fff;
 }
 
 .main-page-title-team-desc {
